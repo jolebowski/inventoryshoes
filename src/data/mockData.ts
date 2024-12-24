@@ -1,0 +1,76 @@
+import { Product } from '../types/inventory';
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Nike Air Max',
+    reference: 'NIKE-AM-001',
+    category: 'Chaussures de sport',
+    quantity: 25,
+    price: 120,
+    criticalThreshold: 5,
+    description: 'Chaussures légères et confortables, adaptées pour la course.',
+    imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff',
+  },
+  {
+    id: '2',
+    name: 'Adidas Ultraboost',
+    reference: 'ADIDAS-UB-002',
+    category: 'Chaussures de sport',
+    quantity: 15,
+    price: 140,
+    criticalThreshold: 5,
+    description: 'Performance exceptionnelle pour les coureurs.',
+    imageUrl: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5',
+  },
+  {
+    id: '3',
+    name: 'Timberland Premium',
+    reference: 'TIMB-PR-003',
+    category: 'Bottes',
+    quantity: 3,
+    price: 180,
+    criticalThreshold: 5,
+    description: 'Bottes robustes et imperméables pour l\'hiver.',
+    imageUrl: 'https://images.unsplash.com/photo-1638247025967-b4e38f787b76',
+  },
+  {
+    id: '4',
+    name: 'Birkenstock Arizona',
+    reference: 'BIRK-AZ-004',
+    category: 'Sandales',
+    quantity: 0,
+    price: 90,
+    criticalThreshold: 5,
+    description: 'Sandales confortables pour l\'été.',
+    imageUrl: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a',
+  },
+  {
+    id: '5',
+    name: 'Puma Future Rider',
+    reference: 'PUMA-FR-005',
+    category: 'Chaussures de sport',
+    quantity: 8,
+    price: 95,
+    criticalThreshold: 5,
+    description: 'Design rétro avec technologie moderne.',
+    imageUrl: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5',
+  },
+  {
+    id: '6',
+    name: 'Dr. Martens 1460',
+    reference: 'MART-1460-006',
+    category: 'Bottes',
+    quantity: 12,
+    price: 160,
+    criticalThreshold: 5,
+    description: 'Bottes iconiques en cuir.',
+    imageUrl: 'https://images.unsplash.com/photo-1638247025967-b4e38f787b76',
+  }
+];
+
+export const getInventoryStats = () => ({
+  totalProducts: 150,
+  outOfStock: 2,
+  totalValue: 18000,
+});
